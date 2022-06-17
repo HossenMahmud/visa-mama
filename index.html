@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Sticky Navbar | CodingNepal</title>
+
+  <!-- fontAwesome css -->
+  <link rel="stylesheet" href="assets/css/all.css">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Style css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <nav class="Navbar">
+    <div class="content">
+      <div class=" d-flex align-items-center">
+        <div class="logo">
+          <a href="#">
+            <img src="assets/images/logo.png" alt="" width="100px">
+          </a>
+        </div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Category</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+
+        </ul>
+      </div>
+      <div class="d-flex justify-content-space-between align-item-center">
+        <div>
+          <a href="#" class="navbar-btn">Login</a>
+          <a class="ms-3 navbar-btn-style" href="#">Sign Up</a>
+        </div>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Banner Part Start -->
+  <section class="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-lg-5 mt-md-5">
+          <div class="banner-content">
+            <h1 class="text-white">The best jobsites <br /> for your
+              <a class="banner-heading-color">features</a>
+            </h1>
+            <p class="mt-3 banner-para">We help you to find the best job to build future and build a better
+              future of digital era</p>
+            <div class="mt-4">
+              <a href="#" class="btn-style">Get Now</a>
+              <a href="#" class="ms-md-5 Btn">Learn more <i class="fa-solid fa-arrow-right-long ms-1"></i>
+              </a>
+            </div>
+            <div class="mt-5">
+              <p>Supported by 3k+ companies</p>
+              <div class="d-flex justify-content-between align-items-center banner-company-name">
+                <p>Meta</p>
+                <p>Google</p>
+                <p>Linked in</p>
+                <p><i class="fa-brands fa-slack"></i> slack</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-lg-7">
+          <div class="banner-img">
+            <img class="img-fluid" src="assets/images/banner.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Banner Part End -->
+  <!-- Counter Part Start -->
+  <section class="counter-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="counter-item counterBorder">
+            <div class="d-flex justify-content-center align-items-center ">
+              <h1 class="counter">1.9</h1>
+              <h1><span class="counter-number-style">K+</span></h1>
+            </div>
+            <p>Ready Job Vacancy</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="counter-item counterBorder">
+            <div class="d-flex justify-content-center align-items-center ">
+              <h1 class="counter">276</h1>
+              <h1><span class="counter-number-style">K+</span></h1>
+            </div>
+            <p>Job Seekers Active</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="counter-item">
+            <div class="d-flex justify-content-center align-items-center ">
+              <h1 class="counter">3.4</h1>
+              <h1><span class="counter-number-style">K+</span></h1>
+            </div>
+            <p>Incorporated Company</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- Counter Part End -->
+
+
+  <script>
+    const body = document.querySelector("body");
+    const Navbar = document.querySelector(".Navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = () => {
+      Navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = () => {
+      body.classList.remove("disabled");
+      Navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = () => {
+      this.scrollY > 20 ? Navbar.classList.add("sticky") : Navbar.classList.remove("sticky");
+    }
+  </script>
+
+
+  <!-- jquery -->
+  <script src="assets/js/jquery.min.js"></script>
+  <!-- Counter js -->
+  <script src="assets/js/jquery.waypoints.min.js"></script>
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!-- Custom js -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
