@@ -21,22 +21,7 @@ ul li {
     list-style-type: none;
 }
 
-/* custom scroll bar */
-::-webkit-scrollbar {
-    width: 10px;
-}
 
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #888;
-}
-
-::selection {
-    background: rgb(0, 123, 255, 0.3);
-}
 
 .content {
     max-width: 1350px;
@@ -53,7 +38,7 @@ ul li {
 }
 
 .Navbar.sticky {
-    background: #204572;
+    background: rgba(34, 34, 34, 0.923);
     padding: 10px 0;
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
 }
@@ -82,7 +67,7 @@ ul li {
 
 .menu-list li a {
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     margin-left: 25px;
     text-decoration: none;
@@ -354,18 +339,20 @@ ul li {
 
     .Navbar .menu-list {
         position: fixed;
-        height: 80vh;
+        height: 60vh;
         width: 100%;
-        max-width: 400px;
+        max-width: 300px;
         left: -100%;
         top: 60px;
         display: block;
         padding: 40px 0;
         text-align: center;
-        background: #204572;
+        background: rgba(34, 34, 34, 0.923);
         transition: all 0.3s ease;
         margin-left: 0;
+        border-radius: 0px 20px 20px 0px;
     }
+
 
     .Navbar.show .menu-list {
         left: 0%;
@@ -376,7 +363,7 @@ ul li {
     }
 
     .Navbar .menu-list li a {
-        font-size: 23px;
+        font-size: 16px;
         margin-left: -100%;
         transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
